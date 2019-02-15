@@ -1,0 +1,24 @@
+body {
+    /* text-align: center; */
+    background-color: #2e3133;
+}
+
+a {
+    font-size: 4em;
+    font-family: 'Inconsolata', monospace;
+    color: #d47617;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 4em;
+    font-family: 'Inconsolata', monospace;
+}
+
+section {
+    margin: 0 100px;
+}
+
+p {
+    color: #2a7a2b;
+}
