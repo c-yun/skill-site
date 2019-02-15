@@ -4,15 +4,19 @@ var app = express();
 app.use(express.static(__dirname + "/views"));
 
 app.get('/', function(req, res) {
-    res.sendFile('index.html');
+    res.sendFile(__dirname + '/views/index.html');
 });
 
-app.get('/', function(req, res) {
-    res.sendFile('about.html');
+app.get('/about', function(req, res) {
+    res.sendFile(__dirname + '/views/about.html');
 });
 
-app.get('/', function(req, res) {
-    res.sendFile('contact.html');
+app.get('/skills', function(req, res) {
+    res.sendFile(__dirname + '/views/skills.html');
+});
+
+app.get('/contact', function(req, res) {
+    res.sendFile(__dirname + '/views/contact.html');
 });
 
 app.listen(3000, function() {
